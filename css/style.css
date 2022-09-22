@@ -1,3 +1,50 @@
-body{
-    background-color: aqua;
+/* RESET */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-family: 'Montserrat' sans-serif;
+    font-size: 100%;
+}
+img{
+    width: 100%;
+}
+
+/* UTILITY */
+:root{
+    --player-height:80px;
+    --sidebar-widht:200px;
+    --banner-height:80px;
+}
+
+/* LAYOUT */
+.web-wrapper{
+    width: 100%;
+    height: 100vh;
+
+    /* debug */
+    background-color: sandybrown;
+}
+main{
+    display: flex;
+    height: calc(100% - var(--player-height));
+}
+.sidebar{
+    width: var(--sidebar-widht);
+
+    /* debug */
+    background-color: aquamarine;
+}
+.player-bar{
+    width: 100%;
+    height: var(--player-height);
+    background-color: grey;
+}
+.upgrade{
+    height: var(--banner-height);
+    width: calc(100% - var(--sidebar-widht));
+    background-color: rgba(0, 0, 0, 0.5);
 }
